@@ -1,88 +1,110 @@
-# Project 3: Ensuring KPI Reliability
+# 🎯 Ensuring KPI Reliability
 
 ## Handling Data Grain Mismatch in Business Dashboards
 
-### 📌 Project Context
+---
 
-This project builds on Project 2 (Indian E-commerce Sales Analysis) and uses the same dataset.  
-My original goal was to analyze sales performance using actual metrics and compare them against sales targets through KPIs and Power BI visuals.  
-While building the dashboard, I identified a critical data reliability issue, which led me to treat this as a separate project focused on KPI accuracy.
+## 📌 Project Overview
+
+This project builds upon **Project 2 – E-Commerce Sales & Profitability Analysis** using the same dataset.
+
+The original objective was to compare **actual sales performance against sales targets** using KPIs and Power BI visuals. However, while building the dashboard, I identified a **critical data reliability issue** that made target-based comparisons misleading.
+
+Rather than forcing technically correct but unreliable metrics, I reframed this work into a focused case study on **KPI reliability, data grain mismatch, and analyst decision-making**.
 
 ---
 
-### ❗ Problem I Identified
+## ❗ Problem Identified
 
-#### While working with the data, I noticed that:
+While working with the data, I observed a fundamental mismatch in data grain:
 
-- Sales data had a clear time dimension (transaction-level, month-wise)
-- Sales targets were defined only at the category level, with no date or month information
+### Sales Data
 
-#### When I joined the target table with sales data and visualized it month-wise:
+* Transaction-level data with a clear **time dimension (month-wise)**
+* Suitable for trend analysis and time-based KPIs
 
-- The same category-level target repeated across multiple months
-- Visuals and KPIs showed targets being met
-- The calculations were technically correct, but the insight was misleading
+### Sales Target Data
 
-As a result, the dashboard incorrectly suggested that targets were achieved, even though actual performance did not support that conclusion.
+* Available only at the **category level**
+* No month or date information provided
 
----
+When the target table was joined with sales data and visualized over time:
 
-### ⚠️ Why I Considered This a Serious Business Risk
+* Category-level targets repeated across multiple months
+* KPIs appeared technically correct but became analytically misleading
+* Dashboards falsely suggested target achievement despite unsupported business reality
 
-#### I realized this could have real consequences:
-
-- Leadership might believe performance was better than it actually was
-- Decisions could be made using incorrect KPIs
-- Teams could be rewarded or penalized unfairly
-- Most importantly, trust in the dashboard and analytics could be damaged
+As a result, the analysis risked producing **incorrect business conclusions**.
 
 ---
 
-### ✅ My Analyst Decision
+## ⚠️ Why This Was a Serious Business Risk
 
-Instead of forcing target-based KPIs or trying to “fix” the visuals artificially, I made a conscious decision to remove or de-emphasize target-based KPIs where the data grain didn’t support fair time-based comparison.  
-I prioritized honest analysis over attractive but unreliable visuals.
+I recognized that unreliable KPIs could create meaningful decision risk:
 
----
+* Leadership may believe performance is stronger than reality
+* Business decisions could be based on misleading KPIs
+* Teams may be rewarded or evaluated unfairly
+* Trust in dashboards and analytics could be weakened
 
-### 🔁 What I Did Instead
-
-I refocused the dashboard on reliable, actual-based metrics, including:
-
-- Total Sales
-- Total Profit
-- Profit Margin
-- Orders
-- Average Order Value (AOV)
-
-Using these, I highlighted:
-
-- Margin pressure
-- Loss-making regions
-- Customer-level profitability
-
-This ensured that the insights were accurate, interpretable, and trustworthy.
+In business analytics, technically correct calculations are not always analytically correct.
 
 ---
 
-### 🧠 My Key Learnings
+## ✅ Analyst Decision
 
-Before adding any KPI or visual, I now ask myself:
+Instead of forcing target-based KPIs or artificially adjusting visuals, I made a conscious decision to **remove or de-emphasize unreliable target metrics** where the data grain did not support fair comparison.
 
-- Does the data grain match across tables?
-- Will this join duplicate or inflate values?
-- Can this metric support time-based trends fairly?
+I prioritized:
 
----
-
-### 🎯 Final Takeaway
-
-A good data analyst protects decision quality — even if that means removing popular KPIs instead of forcing them.
+* Honest analysis over visually impressive dashboards
+* Decision quality over misleading KPIs
+* Reliable business interpretation over forced reporting
 
 ---
 
-## 📂 How This Fits With My Other Projects
+## 🔁 What I Did Instead
 
-- Project 1: SQL Case Study — answering business questions
-- Project 2: Power BI Dashboard — communicating insights
-- Project 3: KPI Governance & Judgment — ensuring insight reliability
+I shifted the analysis toward **reliable, actual-based metrics**, including:
+
+* Total Sales
+* Total Profit
+* Profit Margin
+* Orders
+* Average Order Value (AOV)
+
+Using these metrics, I focused on:
+
+* Margin pressure analysis
+* Loss-making regions
+* Customer-level profitability
+* Reliable operational performance insights
+
+This ensured the dashboard remained **accurate, interpretable, and decision-ready**.
+
+---
+
+## 🧠 Key Learnings
+
+This project reinforced an important analyst mindset:
+
+Before creating KPIs or visuals, I now ask:
+
+* Does the data grain align across tables?
+* Will joins duplicate or inflate values?
+* Can this metric support time-based analysis fairly?
+* Is the insight technically correct **and** analytically reliable?
+
+---
+
+## 🎯 Final Takeaway
+
+A strong data analyst protects **decision quality and trust in analytics** — even when that means removing popular KPIs instead of forcing attractive but unreliable visuals.
+
+---
+
+## 🔗 Relationship to Other Projects
+
+* **Project 1 – SQL Case Study** → Answering business questions through analysis
+* **Project 2 – Power BI Dashboard** → Communicating business insights
+* **Project 3 – KPI Reliability & Judgment** → Ensuring trustworthy and decision-ready analytics
