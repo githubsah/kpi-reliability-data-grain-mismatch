@@ -6,11 +6,13 @@
 
 ## 📌 Project Overview
 
-This project builds upon **Project 2 – E-Commerce Sales & Profitability Analysis** using the same dataset.
+This case study originated during the development of an **E-Commerce Sales & Profitability Dashboard**, where an investigation into sales targets uncovered a **critical data-grain mismatch** that produced misleading KPI comparisons.
 
-The original objective was to compare **actual sales performance against sales targets** using KPIs and Power BI visuals. However, while building the dashboard, I identified a **critical data reliability issue** that made target-based comparisons misleading.
+The original objective was to compare **actual sales performance against sales targets** using KPIs and Power BI visuals. However, during dashboard development, I identified a **data reliability issue** that made target-based comparisons analytically unreliable.
 
-Rather than forcing technically correct but unreliable metrics, I reframed this work into a focused case study on **KPI reliability, data grain mismatch, and analyst decision-making**.
+Rather than forcing technically correct but misleading metrics, I reframed the work into a focused case study on **KPI reliability, data-grain mismatch, and analyst decision-making**.
+
+The project demonstrates how validating data structure and reporting logic is often as important as building dashboards, ensuring that business decisions are based on trustworthy and decision-ready analytics.
 
 ---
 
